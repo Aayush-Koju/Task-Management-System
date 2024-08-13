@@ -1,27 +1,29 @@
+import "./NavBar.css";
+
 export default function NavBar() {
   return (
-    <>
-      <div className="sub-heading">Stay on Top of your Work.</div>
-      <div className="navigation">
-        <div className="dashboard">
+    <div className="nav-bar">
+      <h2 className="sub-heading">Stay on Top of your Work.</h2>
+      <ul className="navigation">
+        <li className="dashboard">
           <a>
             <img src="/icons/dashboard.png" width="20rem" height="20rem"></img>
             <label>Dashboard</label>
           </a>
-        </div>
-        <div className="task-management">
+        </li>
+        <li className="task-management">
           <a>
             <img src="/icons/task.png" width="20rem" height="20rem"></img>
             <label>Task Management</label>
           </a>
-        </div>
-        <div className="project-management">
+        </li>
+        <li className="project-management">
           <a>
             <img src="/icons/project.png" width="20rem" height="20rem"></img>
             <label>Project Management</label>
           </a>
-        </div>
-      </div>
+        </li>
+      </ul>
       <div className="toggle">
         <span>Light Mode</span>
         <input type="checkbox" />
@@ -30,6 +32,6 @@ export default function NavBar() {
       <div className="logout">
         <a href="">Logout</a>
       </div>
-    </>
+    </div>
   );
 }
