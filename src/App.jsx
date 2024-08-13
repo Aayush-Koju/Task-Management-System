@@ -1,10 +1,10 @@
 import "./App.css";
-import NavBar from "./components/navbar/NavBar";
+import Dashboard from "./components/dashboard/Dashboard";
 
 function App() {
   return (
     <>
-      <NavBar />
+      <Dashboard />
     </>
   );
 }
